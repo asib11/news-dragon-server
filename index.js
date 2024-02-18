@@ -13,7 +13,8 @@ const corsConfig = {
     methods: ['GET', 'POST', 'PUT', 'DELETE']
 }
 app.use(cors(corsConfig))
-app.options("", cors(corsConfig))
+app.use(express.json())
+// app.options("", cors(corsConfig))
 
 app.get('/', (req, res) => {
     res.send('Dragon is running')
