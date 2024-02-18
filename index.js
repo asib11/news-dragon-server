@@ -25,7 +25,7 @@ app.get('/categories', (req, res) => {
 });
 
 app.get('/news', (req, res) => {
-    // console.log(news);
+    // console.log(news)
     res.send(news);
 });
 
